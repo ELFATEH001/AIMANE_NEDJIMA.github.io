@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aimane Nedjima - Robotics & Automation Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        h1 {
+            color: #667eea;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        
+        .contact-links a {
+            color: #667eea;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 2px solid #667eea;
+            border-radius: 25px;
+            transition: all 0.3s;
+        }
+        
+        .contact-links a:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        nav {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 20px;
+            z-index: 100;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #764ba2;
+        }
+        
+        section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .skill-category {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 1.5rem;
+            border-radius: 10px;
+            color: white;
+        }
+        
+        .skill-category h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .skill-category p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .experience-item, .project-item {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s;
+        }
+        
+        .experience-item:hover, .project-item:hover {
+            transform: translateX(5px);
+        }
+        
+        .experience-item h3, .project-item h3 {
+            color: #764ba2;
+            margin-bottom: 0.5rem;
+        }
+        
+        .date {
+            color: #666;
+            font-style: italic;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .company {
+            color: #667eea;
+            font-weight: 600;
+        }
+        
+        ul {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+        
+        footer {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        
+        .education-item {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        
+        .certifications {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .cert-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Aimane NEDJIMA</h1>
+            <p class="subtitle">Robotics & Automation Engineer | Master's Student</p>
+            <div class="contact-links">
+                <a href="mailto:aimanenedjima@gmail.com">✉ Email</a>
+                <a href="tel:+33745949166">📱 +33 7 45 94 91 66</a>
+                <a href="https://github.com/yourusername" target="_blank">💻 GitHub</a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">🔗 LinkedIn</a>
+                <a href="#" target="_blank">🎬 YouTube</a>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Graduated in Mechatronics and currently pursuing a Master's in Automation and Robotics at Claude Bernard University Lyon 1. I am passionate about robotics, industrial automation, and IoT systems. With hands-on experience in PLC programming, robot integration, and autonomous systems, I am seeking a work-study opportunity to further develop my technical skills and contribute to innovative projects.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <p>Python, C++, Git Version Control</p>
+                </div>
+                <div class="skill-category">
+                    <h3>PLC & Automation</h3>
+                    <p>TIA Portal, TwinCAT3, CODESYS, Ignition SCADA</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Robotics</h3>
+                    <p>ROS2, Gazebo, Rviz, FANUC, ABB, Universal Robots</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Electronics & IoT</h3>
+                    <p>Raspberry Pi, STM32, Arduino, ESP32</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Simulation & CAD</h3>
+                    <p>MATLAB/Simulink, SolidWorks, Unity</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Other</h3>
+                    <p>3D Printing, Rapid Prototyping, OPC UA</p>
+                </div>
+            </div>
+            
+            <h3 style="margin-top: 2rem; color: #764ba2;">Certifications</h3>
+            <div class="certifications">
+                <div class="cert-badge">TIA Portal Master (Level 5)</div>
+                <div class="cert-badge">Ignition 8.1</div>
+                <div class="cert-badge">IIoT Mini-Course</div>
+                <div class="cert-badge">MATLAB & Simulink Onramp</div>
+                <div class="cert-badge">Universal Robots E-Series</div>
+                <div class="cert-badge">Self-Driving Car Competition</div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            
+            <div class="experience-item">
+                <h3>Industrial Maintenance Intern</h3>
+                <p class="company">FADERCO SPA — Sétif, Algeria</p>
+                <p class="date">February - April 2025</p>
+                <ul>
+                    <li>Studied diaper, wipe, and sanitary napkin production machines</li>
+                    <li>Assisted in packaging machine installation</li>
+                    <li>Helped integrate an ABB robot into the production line</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Remote Subcontractor</h3>
+                <p class="company">ProCheck — Pakistan</p>
+                <p class="date">December 2023 - January 2025</p>
+                <ul>
+                    <li>PLC programming and configuration</li>
+                    <li>Maintenance of the OEE monitoring tool</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Automation Intern</h3>
+                <p class="company">Polystyrène des Oasis — Boumerdes, Algeria</p>
+                <p class="date">July - August 2024</p>
+                <ul>
+                    <li>Implementation of new production systems</li>
+                    <li>Configuration and maintenance of equipment</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Automation Intern</h3>
+                <p class="company">Briqueterie Amouri — Boumerdes, Algeria</p>
+                <p class="date">June - July 2024</p>
+                <ul>
+                    <li>Manipulation of FANUC industrial robots</li>
+                    <li>Repair of pipeline systems</li>
+                    <li>Study of large-scale automation systems</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Automation Intern</h3>
+                <p class="company">GROUPE SAIDAL — Algiers, Algeria</p>
+                <p class="date">March 2024</p>
+                <ul>
+                    <li>Siemens programming on TIA Portal (Ladder)</li>
+                    <li>HMI integration and motor control</li>
+                    <li>Alarm setup and management</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            
+            <div class="project-item">
+                <h3>Flapping-Wing Robot (Final Year Project)</h3>
+                <p class="date">November 2024 - June 2025</p>
+                <p>Designed a flapping-wing robot with custom PCB and advanced control systems. Developed a Simulink model and implemented a full-state observer using a Kalman filter for precise motion control. Studied various aerodynamic mechanisms to optimize performance.</p>
+            </div>
+
+            <div class="project-item">
+                <h3>SCARA Robot with Digital Twin</h3>
+                <p class="date">February 2025</p>
+                <p>Designed and simulated a SCARA robot in Unity, controlled by a Raspberry Pi running CODESYS with an OPC UA server. Developed an OPC UA client for real-time tag reading and writing, creating a fully functional digital twin for various operational scenarios.</p>
+            </div>
+
+            <div class="project-item">
+                <h3>Automated Capping System</h3>
+                <p class="date">May 2024</p>
+                <p>Developed an automated capping system using Siemens S7-1200 PLC for precise process control in industrial applications.</p>
+            </div>
+
+            <div class="project-item">
+                <h3>AI Autonomous Vehicle</h3>
+                <p class="date">November - December 2023</p>
+                <p>Built an autonomous vehicle with camera-based detection and real-time AI algorithms for navigation and obstacle avoidance.</p>
+            </div>
+
+            <div class="project-item">
+                <h3>IoT Monitoring Panel</h3>
+                <p class="date">November - December 2023</p>
+                <p>Created an IoT data collection and monitoring system using Raspberry Pi, Node-RED, and ESP32 for real-time environmental monitoring.</p>
+            </div>
+
+            <div class="project-item">
+                <h3>RC Steering Mechanism</h3>
+                <p class="date">September - October 2023</p>
+                <p>Designed and rendered a 3D RC steering mechanism in SolidWorks, demonstrating proficiency in mechanical design and CAD.</p>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            
+            <div class="education-item">
+                <h3>Master 1 in Automation and Robotics</h3>
+                <p class="company">Claude Bernard University Lyon 1</p>
+                <p class="date">2025 - 2026</p>
+            </div>
+
+            <div class="education-item">
+                <h3>State Engineer in Mechatronics</h3>
+                <p class="company">ENSTA — Algiers, Algeria</p>
+                <p class="date">2022 - 2025</p>
+            </div>
+
+            <div class="education-item">
+                <h3>Preparatory Cycle</h3>
+                <p class="company">ENSTP — Algiers, Algeria</p>
+                <p class="date">2020 - 2022</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>I'm currently seeking work-study opportunities in robotics and automation. Feel free to reach out!</p>
+            <div class="contact-links" style="margin-top: 1rem;">
+                <a href="mailto:aimanenedjima@gmail.com">Send Email</a>
+                <a href="tel:+33745949166">Call Me</a>
+            </div>
+            <p style="margin-top: 1rem; color: #666;">📍 62 Rue Dubois Crancé, 69600 Oullins, France</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Aimane Nedjima. All rights reserved.</p>
+            <p style="margin-top: 0.5rem; color: #666;">Built with passion for robotics and automation</p>
+        </footer>
+    </div>
+</body>
+</html>
